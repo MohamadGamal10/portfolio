@@ -6,9 +6,26 @@ const Contactdiv = styled.div`
   background-color: #29A587;
 `;
 
+const Btn = styled.button`
+ background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: white;
+    color: black;
+   
+  }`;
+
 export default function Contact() {
   return (
-    <div id="contact"> 
+    <div id="contact" data-aos="zoom-in"> 
       <SubTitle title={"Contact"} />
     <div className="max-w-xl mx-auto justify-center  my-9">
       {/* <div className="bg-white text-start p-4 rounded-xl m-2 md:m-0">
@@ -73,12 +90,12 @@ export default function Contact() {
               />
             </div>
           </div>
-          <button
+          <Btn
             type="submit"
             className=" w-full  bg-white hover:bg-white hover:text-black font-medium rounded-lg text-sm  py-2.5 text-center border-2 border-black items-center  "
               >
             Submit
-          </button>
+          </Btn>
         </form>
       </Contactdiv>
     </div>

@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CircleSkilll  = styled.div`
+background-color: #29A587;
+color: white;
  &:hover {
-    background-color: #29A587;
+    background-color: black;
   }
 `
 

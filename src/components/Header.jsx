@@ -1,9 +1,9 @@
 
-import { Cross as Hamburger } from 'hamburger-react';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { Bars3Icon , XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const NavItem = styled.a`
@@ -15,6 +15,7 @@ const NavItem = styled.a`
 
 
 export default function Header() {
+  const [isOpen, setOpen] = useState(false);
   // const location = useLocation();
   // const path = location.pathname;
 
@@ -27,7 +28,7 @@ export default function Header() {
     return classes.filter(Boolean).join(' ')
   }
 
-    const [isOpen, setOpen] = useState(false);
+
 
     const smoothScroll = (e, href) => {
       e.preventDefault();
@@ -37,6 +38,7 @@ export default function Header() {
           behavior: 'smooth',
           block: 'start',
         });
+        setOpen(!isOpen);
       }
     };
   return (
@@ -54,7 +56,7 @@ export default function Header() {
                   <NavItem
                     key={item.name}
                     href={item.href}
-                    onClick={(e) => smoothScroll(e, item.href)}
+                    onClick={(e) => {smoothScroll(e, item.href); } }
                     className={classNames(
                          'text-black  hover:text-white',
                         'rounded-md px-3 py-2 text-lg font-medium'
@@ -69,12 +71,12 @@ export default function Header() {
  
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md text-white bg-black hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              {/* <span className="absolute -inset-0.5" />
+            <DisclosureButton  className="group relative p-2 inline-flex items-center justify-center rounded-md text-white bg-black hover:bg-black hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" /> */}
-              <Hamburger toggled={isOpen} toggle={setOpen} />
+              <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
+              {/* <Hamburger toggled={isOpen} toggle={setOpen} /> */}
             </DisclosureButton>
           </div>
         </div>

@@ -8,6 +8,8 @@ import SubTitle from "./SubTitle";
 // import { IoIosRocket } from "react-icons/io";
 
 const Card = styled.div`
+  background-color: #29A587;
+  color: white;
  transition: all 0.5s ease-in-out;
  &:hover {
     transform: translateY(-10px);
@@ -16,7 +18,7 @@ const Card = styled.div`
   }
   `
 const Btn = styled.a`
- background-color: #29A587;
+ background-color: black;
   color: white;
   padding: 10px 20px;
   border: 2px solid black;
@@ -27,16 +29,16 @@ const Btn = styled.a`
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   &:hover {
-    background-color: black;
-    border: 2px solid #29A587;
-    color: white
+    background-color: white;
+    color: black;
+   
   }
   `
 
 export default function Projects() {
   return (
    
-    <div id="projects">
+    <div id="projects" data-aos="zoom-in">
          <SubTitle title={"Projects"} />
          <div  className="grid md:grid-cols-3 grid-rows-1 gap-y-8 max-w-7xl mx-auto justify-center my-10">
           
@@ -44,19 +46,19 @@ export default function Projects() {
           <Card className="max-w-sm bg-white border overflow-hidden mx-auto  rounded-lg shadow animate-slideUp">
           <figure className=" overflow-hidden m-3">
               <img
-                class="rounded-lg hover:scale-105 duration-300 "
+                className="rounded-lg hover:scale-105 duration-300 "
                 src={img}
                 alt=""
               />
             </figure>
-            <div className="flex gap-2 m-3 text-white font-bold">
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>phhhp</div>
+            <div className="flex gap-2 m-3 text-black font-bold">
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
             </div>
-            <div class="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
+            <div className="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
               
         
-                <h5 class="mb-2 text-2xl font-bold  text-black">
+                <h5 className="mb-2 text-2xl font-bold  text-black">
                   Project Title
                 </h5>
           
@@ -72,30 +74,31 @@ export default function Projects() {
         </Btn>
 
         <Btn href="/" >
-      <i class="fa-solid fa-rocket"></i> Demo
+      <i className="fa-solid fa-rocket"></i> Demo
         </Btn>
      </div>
 
             </div>
           </Card>
+     
      
      
           <Card className="max-w-sm bg-white border overflow-hidden mx-auto  rounded-lg shadow animate-slideUp">
           <figure className=" overflow-hidden m-3">
               <img
-                class="rounded-lg hover:scale-105 duration-300 "
+                className="rounded-lg hover:scale-105 duration-300 "
                 src={img}
                 alt=""
               />
             </figure>
-            <div className="flex gap-2 m-3 text-white font-bold">
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>phhhp</div>
+            <div className="flex gap-2 m-3 text-black font-bold">
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
             </div>
-            <div class="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
+            <div className="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
               
         
-                <h5 class="mb-2 text-2xl font-bold  text-black">
+                <h5 className="mb-2 text-2xl font-bold  text-black">
                   Project Title
                 </h5>
           
@@ -111,30 +114,31 @@ export default function Projects() {
         </Btn>
 
         <Btn href="/" >
-      <i class="fa-solid fa-rocket"></i> Demo
+      <i className="fa-solid fa-rocket"></i> Demo
         </Btn>
      </div>
 
             </div>
           </Card>
+     
      
      
           <Card className="max-w-sm bg-white border overflow-hidden mx-auto  rounded-lg shadow animate-slideUp">
           <figure className=" overflow-hidden m-3">
               <img
-                class="rounded-lg hover:scale-105 duration-300 "
+                className="rounded-lg hover:scale-105 duration-300 "
                 src={img}
                 alt=""
               />
             </figure>
-            <div className="flex gap-2 m-3 text-white font-bold">
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
-              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'gray', borderRadius: '10px' , width: 'fit-content' }}>phhhp</div>
+            <div className="flex gap-2 m-3 text-black font-bold">
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
+              <div style={{ border: '1px solid #F1ECE4', fontSize: '12px',fontWeight: '400', padding: '2px 8px', backgroundColor: 'white', borderRadius: '10px' , width: 'fit-content' }}>tag</div>
             </div>
-            <div class="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
+            <div className="pb-2  bg-gradient-to-b from-transparent z-10  rounded-b-xl">
               
         
-                <h5 class="mb-2 text-2xl font-bold  text-black">
+                <h5 className="mb-2 text-2xl font-bold  text-black">
                   Project Title
                 </h5>
           
@@ -150,12 +154,15 @@ export default function Projects() {
         </Btn>
 
         <Btn href="/" >
-      <i class="fa-solid fa-rocket"></i> Demo
+      <i className="fa-solid fa-rocket"></i> Demo
         </Btn>
      </div>
 
             </div>
           </Card>
+     
+     
+         
      
    
        
